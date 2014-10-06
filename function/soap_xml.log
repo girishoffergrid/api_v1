@@ -1,0 +1,3005 @@
+[Sep 19 2014 14:42:42.000000 - ERROR] POST /api/adwords/cm/v201406/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 475
+Authorization: Bearer ya29.hQCLIKaj7iacCg9B2kFq_OMRsMCScFLYCfM5LEkHbLU6ZsR7pQ7Epfve
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise Budget #541bf386805d9</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>100</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 09:12:42 GMT
+Expires: Fri, 19 Sep 2014 09:12:42 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 521
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>0005036780d2aab10a429a280c0053d4</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>329</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[BudgetError.MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC @ operations[0].operand.amount]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+          <message>[BudgetError.MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC @ operations[0].operand.amount]</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BudgetError">
+            <fieldPath>operations[0].operand.amount</fieldPath>
+            <trigger/>
+            <errorString>BudgetError.MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC</errorString>
+            <ApiError.Type>BudgetError</ApiError.Type>
+            <reason>MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 14:43:03.000000 - INFO] POST /api/adwords/cm/v201406/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 477
+Authorization: Bearer ya29.hQC6Ib821owG6fdSGbCa_e-Y9TFqJfYbNCGuWncM-Zj-NXs3sXPuCKjG
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise Budget #541bf39bb77fd</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>500000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 09:13:02 GMT
+Expires: Fri, 19 Sep 2014 09:13:02 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 464
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503678213aa790a430e661c00746b</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>549</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>BudgetReturnValue</ListReturnValue.Type>
+        <value>
+          <budgetId>202983685</budgetId>
+          <name>Interplanetary Cruise Budget #541bf39bb77fd</name>
+          <period>DAILY</period>
+          <amount>
+            <ComparableValue.Type>Money</ComparableValue.Type>
+            <microAmount>500000</microAmount>
+          </amount>
+          <deliveryMethod>STANDARD</deliveryMethod>
+          <isExplicitlyShared>true</isExplicitlyShared>
+          <status>ENABLED</status>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 14:43:09.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 858
+Authorization: Bearer ya29.hQC6Ib821owG6fdSGbCa_e-Y9TFqJfYbNCGuWncM-Zj-NXs3sXPuCKjG
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise #541bf3a4737b5</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20140920</ns1:startDate>
+          <ns1:endDate>20141019</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>202983685</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>5</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:KeywordMatchSetting">
+            <ns1:optIn>true</ns1:optIn>
+          </ns1:settings>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 09:13:08 GMT
+Expires: Fri, 19 Sep 2014 09:13:08 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 1030
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503678272a6e10a42482ab900360a</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>310</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>CampaignReturnValue</ListReturnValue.Type>
+        <value>
+          <id>202931245</id>
+          <name>Interplanetary Cruise #541bf3a4737b5</name>
+          <status>PAUSED</status>
+          <servingStatus>PENDING</servingStatus>
+          <startDate>20140920</startDate>
+          <endDate>20141019</endDate>
+          <budget>
+            <budgetId>202983685</budgetId>
+            <name>Interplanetary Cruise Budget #541bf39bb77fd</name>
+            <period>DAILY</period>
+            <amount>
+              <ComparableValue.Type>Money</ComparableValue.Type>
+              <microAmount>500000</microAmount>
+            </amount>
+            <deliveryMethod>STANDARD</deliveryMethod>
+            <isExplicitlyShared>true</isExplicitlyShared>
+            <status>ENABLED</status>
+          </budget>
+          <conversionOptimizerEligibility>
+            <eligible>false</eligible>
+            <rejectionReasons>CAMPAIGN_IS_NOT_ACTIVE</rejectionReasons>
+            <rejectionReasons>CONVERSION_TRACKING_NOT_ENABLED</rejectionReasons>
+          </conversionOptimizerEligibility>
+          <adServingOptimizationStatus>ROTATE</adServingOptimizationStatus>
+          <frequencyCap>
+            <impressions>5</impressions>
+            <timeUnit>DAY</timeUnit>
+            <level>ADGROUP</level>
+          </frequencyCap>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting">
+            <Setting.Type>GeoTargetTypeSetting</Setting.Type>
+            <positiveGeoTargetType>DONT_CARE</positiveGeoTargetType>
+            <negativeGeoTargetType>DONT_CARE</negativeGeoTargetType>
+          </settings>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="KeywordMatchSetting">
+            <Setting.Type>KeywordMatchSetting</Setting.Type>
+            <optIn>true</optIn>
+          </settings>
+          <advertisingChannelType>SEARCH</advertisingChannelType>
+          <networkSetting>
+            <targetGoogleSearch>true</targetGoogleSearch>
+            <targetSearchNetwork>true</targetSearchNetwork>
+            <targetContentNetwork>true</targetContentNetwork>
+            <targetPartnerSearchNetwork>false</targetPartnerSearchNetwork>
+          </networkSetting>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+          </biddingStrategyConfiguration>
+          <displaySelect>true</displaySelect>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 14:59:12.000000 - INFO] POST /api/adwords/cm/v201406/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 468
+Authorization: Bearer ya29.hQAkIv7UzxjO_G__TpcBVqpkhH5Cv1A2u4SimvrU_qztXn1pMKcdxAp4
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>girish_Budget #541bf7654a58b</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>500000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 09:29:11 GMT
+Expires: Fri, 19 Sep 2014 09:29:11 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 454
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>00050367bbd2b7690a424c2a770017f8</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>486</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>BudgetReturnValue</ListReturnValue.Type>
+        <value>
+          <budgetId>202985845</budgetId>
+          <name>girish_Budget #541bf7654a58b</name>
+          <period>DAILY</period>
+          <amount>
+            <ComparableValue.Type>Money</ComparableValue.Type>
+            <microAmount>500000</microAmount>
+          </amount>
+          <deliveryMethod>STANDARD</deliveryMethod>
+          <isExplicitlyShared>true</isExplicitlyShared>
+          <status>ENABLED</status>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 14:59:18.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 848
+Authorization: Bearer ya29.hQAkIv7UzxjO_G__TpcBVqpkhH5Cv1A2u4SimvrU_qztXn1pMKcdxAp4
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>girish #541bf76d887aa</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20140920</ns1:startDate>
+          <ns1:endDate>20141019</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>202985845</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>3</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:KeywordMatchSetting">
+            <ns1:optIn>true</ns1:optIn>
+          </ns1:settings>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 09:29:18 GMT
+Expires: Fri, 19 Sep 2014 09:29:18 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 1020
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>00050367bc37f1790a4301efd9002f51</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>349</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>CampaignReturnValue</ListReturnValue.Type>
+        <value>
+          <id>202932685</id>
+          <name>girish #541bf76d887aa</name>
+          <status>PAUSED</status>
+          <servingStatus>PENDING</servingStatus>
+          <startDate>20140920</startDate>
+          <endDate>20141019</endDate>
+          <budget>
+            <budgetId>202985845</budgetId>
+            <name>girish_Budget #541bf7654a58b</name>
+            <period>DAILY</period>
+            <amount>
+              <ComparableValue.Type>Money</ComparableValue.Type>
+              <microAmount>500000</microAmount>
+            </amount>
+            <deliveryMethod>STANDARD</deliveryMethod>
+            <isExplicitlyShared>true</isExplicitlyShared>
+            <status>ENABLED</status>
+          </budget>
+          <conversionOptimizerEligibility>
+            <eligible>false</eligible>
+            <rejectionReasons>CAMPAIGN_IS_NOT_ACTIVE</rejectionReasons>
+            <rejectionReasons>CONVERSION_TRACKING_NOT_ENABLED</rejectionReasons>
+          </conversionOptimizerEligibility>
+          <adServingOptimizationStatus>ROTATE</adServingOptimizationStatus>
+          <frequencyCap>
+            <impressions>3</impressions>
+            <timeUnit>DAY</timeUnit>
+            <level>ADGROUP</level>
+          </frequencyCap>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting">
+            <Setting.Type>GeoTargetTypeSetting</Setting.Type>
+            <positiveGeoTargetType>DONT_CARE</positiveGeoTargetType>
+            <negativeGeoTargetType>DONT_CARE</negativeGeoTargetType>
+          </settings>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="KeywordMatchSetting">
+            <Setting.Type>KeywordMatchSetting</Setting.Type>
+            <optIn>true</optIn>
+          </settings>
+          <advertisingChannelType>SEARCH</advertisingChannelType>
+          <networkSetting>
+            <targetGoogleSearch>true</targetGoogleSearch>
+            <targetSearchNetwork>true</targetSearchNetwork>
+            <targetContentNetwork>true</targetContentNetwork>
+            <targetPartnerSearchNetwork>false</targetPartnerSearchNetwork>
+          </networkSetting>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+          </biddingStrategyConfiguration>
+          <displaySelect>true</displaySelect>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 15:35:42.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 616
+Authorization: Bearer ya29.hQCvyl048iKXgvDLeNFi9s7HdAeBFdiDQlhrBpoHsX7ZbVQ0kIYig4gE
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:campaignId>202913605</ns1:campaignId>
+          <ns1:name>test</ns1:name>
+          <ns1:status>ENABLED</ns1:status>
+          <ns1:settings xsi:type="ns1:TargetingSetting">
+            <ns1:details>
+              <ns1:criterionTypeGroup>PLACEMENT</ns1:criterionTypeGroup>
+              <ns1:targetAll>true</ns1:targetAll>
+            </ns1:details>
+            <ns1:details>
+              <ns1:criterionTypeGroup>VERTICAL</ns1:criterionTypeGroup>
+              <ns1:targetAll>false</ns1:targetAll>
+            </ns1:details>
+          </ns1:settings>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:bids xsi:type="ns1:CpcBid">
+              <ns1:bid>
+                <ns1:microAmount>1000000</ns1:microAmount>
+              </ns1:bid>
+            </ns1:bids>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 10:05:42 GMT
+Expires: Fri, 19 Sep 2014 10:05:42 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 746
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503683e675dc80a424c2a770017f8</requestId>
+      <serviceName>AdGroupService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>562</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>AdGroupReturnValue</ListReturnValue.Type>
+        <value>
+          <id>19202941045</id>
+          <campaignId>202913605</campaignId>
+          <campaignName>Campaign #1</campaignName>
+          <name>test</name>
+          <status>ENABLED</status>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TargetingSetting">
+            <Setting.Type>TargetingSetting</Setting.Type>
+            <details>
+              <criterionTypeGroup>VERTICAL</criterionTypeGroup>
+              <targetAll>false</targetAll>
+            </details>
+            <details>
+              <criterionTypeGroup>PLACEMENT</criterionTypeGroup>
+              <targetAll>true</targetAll>
+            </details>
+          </settings>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>BUDGET_OPTIMIZER</biddingStrategyType>
+            <biddingStrategySource>CAMPAIGN</biddingStrategySource>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BudgetOptimizerBiddingScheme">
+              <BiddingScheme.Type>BudgetOptimizerBiddingScheme</BiddingScheme.Type>
+              <bidCeiling>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>0</microAmount>
+              </bidCeiling>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpcBid">
+              <Bids.Type>CpcBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>1000000</microAmount>
+              </bid>
+              <cpcBidSource>ADGROUP</cpcBidSource>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpaBid">
+              <Bids.Type>CpaBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000</microAmount>
+              </bid>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpmBid">
+              <Bids.Type>CpmBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000000</microAmount>
+              </bid>
+              <cpmBidSource>ADGROUP</cpmBidSource>
+            </bids>
+          </biddingStrategyConfiguration>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 15:36:55.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 620
+Authorization: Bearer ya29.hQCR2HH94gFI1PkZ5SY3wFprqVvtkteFeInNzTyKzytnpx7cbQTMfruC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:campaignId>202931245</ns1:campaignId>
+          <ns1:name>giri-test</ns1:name>
+          <ns1:status>ENABLED</ns1:status>
+          <ns1:settings xsi:type="ns1:TargetingSetting">
+            <ns1:details>
+              <ns1:criterionTypeGroup>PLACEMENT</ns1:criterionTypeGroup>
+              <ns1:targetAll>true</ns1:targetAll>
+            </ns1:details>
+            <ns1:details>
+              <ns1:criterionTypeGroup>VERTICAL</ns1:criterionTypeGroup>
+              <ns1:targetAll>false</ns1:targetAll>
+            </ns1:details>
+          </ns1:settings>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:bids xsi:type="ns1:CpcBid">
+              <ns1:bid>
+                <ns1:microAmount>1000000</ns1:microAmount>
+              </ns1:bid>
+            </ns1:bids>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 10:06:54 GMT
+Expires: Fri, 19 Sep 2014 10:06:54 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 743
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>0005036842b265590a42afcdad0021f3</requestId>
+      <serviceName>AdGroupService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>628</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>AdGroupReturnValue</ListReturnValue.Type>
+        <value>
+          <id>19202941405</id>
+          <campaignId>202931245</campaignId>
+          <campaignName>Interplanetary Cruise #541bf3a4737b5</campaignName>
+          <name>giri-test</name>
+          <status>ENABLED</status>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TargetingSetting">
+            <Setting.Type>TargetingSetting</Setting.Type>
+            <details>
+              <criterionTypeGroup>VERTICAL</criterionTypeGroup>
+              <targetAll>false</targetAll>
+            </details>
+            <details>
+              <criterionTypeGroup>PLACEMENT</criterionTypeGroup>
+              <targetAll>true</targetAll>
+            </details>
+          </settings>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingStrategySource>CAMPAIGN</biddingStrategySource>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpcBid">
+              <Bids.Type>CpcBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>1000000</microAmount>
+              </bid>
+              <cpcBidSource>ADGROUP</cpcBidSource>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpaBid">
+              <Bids.Type>CpaBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000</microAmount>
+              </bid>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpmBid">
+              <Bids.Type>CpmBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000000</microAmount>
+              </bid>
+              <cpmBidSource>ADGROUP</cpmBidSource>
+            </bids>
+          </biddingStrategyConfiguration>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 16:42:31.000000 - INFO] POST /api/adwords/cm/v201406/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 459
+Authorization: Bearer ya29.hQAxfQipWmWN-XItYYy_sHpravMRzHWCNiG5vWt1eTc2_3MsuJIySv14
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>girish-kumar_Budget</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>5000000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:12:31 GMT
+Expires: Fri, 19 Sep 2014 11:12:31 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 443
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503692d55c3700a429f443b0007a4</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>654</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>BudgetReturnValue</ListReturnValue.Type>
+        <value>
+          <budgetId>202994845</budgetId>
+          <name>girish-kumar_Budget</name>
+          <period>DAILY</period>
+          <amount>
+            <ComparableValue.Type>Money</ComparableValue.Type>
+            <microAmount>5000000</microAmount>
+          </amount>
+          <deliveryMethod>STANDARD</deliveryMethod>
+          <isExplicitlyShared>true</isExplicitlyShared>
+          <status>ENABLED</status>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 16:42:38.000000 - ERROR] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 819
+Authorization: Bearer ya29.hQAxfQipWmWN-XItYYy_sHpravMRzHWCNiG5vWt1eTc2_3MsuJIySv14
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20140920</ns1:startDate>
+          <ns1:endDate>20141019</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>202994845</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>3</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:KeywordMatchSetting">
+            <ns1:optIn>true</ns1:optIn>
+          </ns1:settings>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:12:37 GMT
+Expires: Fri, 19 Sep 2014 11:12:37 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 486
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503692dba0f390a42fd659e0052c4</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>500</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[RequiredError.REQUIRED @ operations[0].operand.name]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+          <message>[RequiredError.REQUIRED @ operations[0].operand.name]</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RequiredError">
+            <fieldPath>operations[0].operand.name</fieldPath>
+            <trigger/>
+            <errorString>RequiredError.REQUIRED</errorString>
+            <ApiError.Type>RequiredError</ApiError.Type>
+            <reason>REQUIRED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 16:43:29.000000 - ERROR] POST /api/adwords/cm/v201406/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 459
+Authorization: Bearer ya29.hQAmJEAQaAsmKr-OnLpPJ5vUbkWGyoC3S1erUQOJC0Inqus5QwdxqCla
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>girish-kumar_Budget</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>5000000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:13:28 GMT
+Expires: Fri, 19 Sep 2014 11:13:28 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 487
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>0005036930c2e6500a42e4c504000e79</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>512</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[BudgetError.DUPLICATE_NAME @ operations[0].operand.name]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+          <message>[BudgetError.DUPLICATE_NAME @ operations[0].operand.name]</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BudgetError">
+            <fieldPath>operations[0].operand.name</fieldPath>
+            <trigger/>
+            <errorString>BudgetError.DUPLICATE_NAME</errorString>
+            <ApiError.Type>BudgetError</ApiError.Type>
+            <reason>DUPLICATE_NAME</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 16:45:38.000000 - INFO] POST /api/adwords/cm/v201406/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 473
+Authorization: Bearer ya29.hQB49aJaqDqGFxwXwSnC4hUv3jofdlJmtjwHpL_4bTY8LWqJFvqjxU2m
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>girish-kumar_Budget #541c1057a3390</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>5000000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:15:38 GMT
+Expires: Fri, 19 Sep 2014 11:15:38 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 458
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503693878bf010a42e4c504000e79</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>583</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>BudgetReturnValue</ListReturnValue.Type>
+        <value>
+          <budgetId>202995205</budgetId>
+          <name>girish-kumar_Budget #541c1057a3390</name>
+          <period>DAILY</period>
+          <amount>
+            <ComparableValue.Type>Money</ComparableValue.Type>
+            <microAmount>5000000</microAmount>
+          </amount>
+          <deliveryMethod>STANDARD</deliveryMethod>
+          <isExplicitlyShared>true</isExplicitlyShared>
+          <status>ENABLED</status>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 16:45:44.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 839
+Authorization: Bearer ya29.hQB49aJaqDqGFxwXwSnC4hUv3jofdlJmtjwHpL_4bTY8LWqJFvqjxU2m
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>girish-kumar</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20140920</ns1:startDate>
+          <ns1:endDate>20141019</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>202995205</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>3</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:KeywordMatchSetting">
+            <ns1:optIn>true</ns1:optIn>
+          </ns1:settings>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:15:44 GMT
+Expires: Fri, 19 Sep 2014 11:15:44 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 1013
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>0005036938d91ee00a42078774005368</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>368</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>CampaignReturnValue</ListReturnValue.Type>
+        <value>
+          <id>202940005</id>
+          <name>girish-kumar</name>
+          <status>PAUSED</status>
+          <servingStatus>PENDING</servingStatus>
+          <startDate>20140920</startDate>
+          <endDate>20141019</endDate>
+          <budget>
+            <budgetId>202995205</budgetId>
+            <name>girish-kumar_Budget #541c1057a3390</name>
+            <period>DAILY</period>
+            <amount>
+              <ComparableValue.Type>Money</ComparableValue.Type>
+              <microAmount>5000000</microAmount>
+            </amount>
+            <deliveryMethod>STANDARD</deliveryMethod>
+            <isExplicitlyShared>true</isExplicitlyShared>
+            <status>ENABLED</status>
+          </budget>
+          <conversionOptimizerEligibility>
+            <eligible>false</eligible>
+            <rejectionReasons>CAMPAIGN_IS_NOT_ACTIVE</rejectionReasons>
+            <rejectionReasons>CONVERSION_TRACKING_NOT_ENABLED</rejectionReasons>
+          </conversionOptimizerEligibility>
+          <adServingOptimizationStatus>ROTATE</adServingOptimizationStatus>
+          <frequencyCap>
+            <impressions>3</impressions>
+            <timeUnit>DAY</timeUnit>
+            <level>ADGROUP</level>
+          </frequencyCap>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting">
+            <Setting.Type>GeoTargetTypeSetting</Setting.Type>
+            <positiveGeoTargetType>DONT_CARE</positiveGeoTargetType>
+            <negativeGeoTargetType>DONT_CARE</negativeGeoTargetType>
+          </settings>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="KeywordMatchSetting">
+            <Setting.Type>KeywordMatchSetting</Setting.Type>
+            <optIn>true</optIn>
+          </settings>
+          <advertisingChannelType>SEARCH</advertisingChannelType>
+          <networkSetting>
+            <targetGoogleSearch>true</targetGoogleSearch>
+            <targetSearchNetwork>true</targetSearchNetwork>
+            <targetContentNetwork>true</targetContentNetwork>
+            <targetPartnerSearchNetwork>false</targetPartnerSearchNetwork>
+          </networkSetting>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+          </biddingStrategyConfiguration>
+          <displaySelect>true</displaySelect>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 16:48:16.000000 - ERROR] POST /api/adwords/cm/v201406/AdGroupService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 607
+Authorization: Bearer ya29.hQA36YRSHh2RKdTD54A7elrXNkPuDLiIV_5bu3oS2LgaSkpMIWU5VLrW
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:campaignId>giri-test-1</ns1:campaignId>
+          <ns1:status>ENABLED</ns1:status>
+          <ns1:settings xsi:type="ns1:TargetingSetting">
+            <ns1:details>
+              <ns1:criterionTypeGroup>PLACEMENT</ns1:criterionTypeGroup>
+              <ns1:targetAll>true</ns1:targetAll>
+            </ns1:details>
+            <ns1:details>
+              <ns1:criterionTypeGroup>VERTICAL</ns1:criterionTypeGroup>
+              <ns1:targetAll>false</ns1:targetAll>
+            </ns1:details>
+          </ns1:settings>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:bids xsi:type="ns1:CpcBid">
+              <ns1:bid>
+                <ns1:microAmount>500000</ns1:microAmount>
+              </ns1:bid>
+            </ns1:bids>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:18:15 GMT
+Expires: Fri, 19 Sep 2014 11:18:15 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 170
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Unmarshalling Error: For input string: "giri-test-1" </faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 16:49:31.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 622
+Authorization: Bearer ya29.hQCs5JqwcjQZpc-T1Ltve0Vi6uos8Lnk3YGMSImV5LIILv8H6z5rHnjU
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:campaignId>202940005</ns1:campaignId>
+          <ns1:name>giri-test-1</ns1:name>
+          <ns1:status>ENABLED</ns1:status>
+          <ns1:settings xsi:type="ns1:TargetingSetting">
+            <ns1:details>
+              <ns1:criterionTypeGroup>PLACEMENT</ns1:criterionTypeGroup>
+              <ns1:targetAll>true</ns1:targetAll>
+            </ns1:details>
+            <ns1:details>
+              <ns1:criterionTypeGroup>VERTICAL</ns1:criterionTypeGroup>
+              <ns1:targetAll>false</ns1:targetAll>
+            </ns1:details>
+          </ns1:settings>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:bids xsi:type="ns1:CpcBid">
+              <ns1:bid>
+                <ns1:microAmount>500000</ns1:microAmount>
+              </ns1:bid>
+            </ns1:bids>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:19:30 GMT
+Expires: Fri, 19 Sep 2014 11:19:30 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 724
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503694654eef00a424f889d002bc0</requestId>
+      <serviceName>AdGroupService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>526</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>AdGroupReturnValue</ListReturnValue.Type>
+        <value>
+          <id>19202982685</id>
+          <campaignId>202940005</campaignId>
+          <campaignName>girish-kumar</campaignName>
+          <name>giri-test-1</name>
+          <status>ENABLED</status>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TargetingSetting">
+            <Setting.Type>TargetingSetting</Setting.Type>
+            <details>
+              <criterionTypeGroup>VERTICAL</criterionTypeGroup>
+              <targetAll>false</targetAll>
+            </details>
+            <details>
+              <criterionTypeGroup>PLACEMENT</criterionTypeGroup>
+              <targetAll>true</targetAll>
+            </details>
+          </settings>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingStrategySource>CAMPAIGN</biddingStrategySource>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpcBid">
+              <Bids.Type>CpcBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>500000</microAmount>
+              </bid>
+              <cpcBidSource>ADGROUP</cpcBidSource>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpaBid">
+              <Bids.Type>CpaBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000</microAmount>
+              </bid>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpmBid">
+              <Bids.Type>CpmBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000000</microAmount>
+              </bid>
+              <cpmBidSource>ADGROUP</cpmBidSource>
+            </bids>
+          </biddingStrategyConfiguration>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 17:22:38.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupAdService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 630
+Authorization: Bearer ya29.hQDtE6oSICoKGLflYoDZ3nI6PlL0pUFJDVkH2_MpZwAyuH8psPIzSTAx
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:adGroupId>19202982685</ns1:adGroupId>
+          <ns1:ad xsi:type="ns1:TextAd">
+            <ns1:url>http://www.example.com</ns1:url>
+            <ns1:displayUrl>www.example.com</ns1:displayUrl>
+            <ns1:headline>Cruise #541c19033e687</ns1:headline>
+            <ns1:description1>Visit the Red Planet in style.</ns1:description1>
+            <ns1:description2>Low-gravity fun for everyone!</ns1:description2>
+          </ns1:ad>
+          <ns1:status>PAUSED</ns1:status>
+        </ns1:operand>
+      </ns1:operations>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:adGroupId>19202982685</ns1:adGroupId>
+          <ns1:ad xsi:type="ns1:TextAd">
+            <ns1:url>http://www.example.com</ns1:url>
+            <ns1:displayUrl>www.example.com</ns1:displayUrl>
+            <ns1:headline>Cruise #541c19033e6de</ns1:headline>
+            <ns1:description1>Visit the Red Planet in style.</ns1:description1>
+            <ns1:description2>Low-gravity fun for everyone!</ns1:description2>
+          </ns1:ad>
+          <ns1:status>PAUSED</ns1:status>
+        </ns1:operand>
+      </ns1:operations>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:adGroupId>19202982685</ns1:adGroupId>
+          <ns1:ad xsi:type="ns1:TextAd">
+            <ns1:url>http://www.example.com</ns1:url>
+            <ns1:displayUrl>www.example.com</ns1:displayUrl>
+            <ns1:headline>Cruise #541c19033e724</ns1:headline>
+            <ns1:description1>Visit the Red Planet in style.</ns1:description1>
+            <ns1:description2>Low-gravity fun for everyone!</ns1:description2>
+          </ns1:ad>
+          <ns1:status>PAUSED</ns1:status>
+        </ns1:operand>
+      </ns1:operations>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:adGroupId>19202982685</ns1:adGroupId>
+          <ns1:ad xsi:type="ns1:TextAd">
+            <ns1:url>http://www.example.com</ns1:url>
+            <ns1:displayUrl>www.example.com</ns1:displayUrl>
+            <ns1:headline>Cruise #541c19033e769</ns1:headline>
+            <ns1:description1>Visit the Red Planet in style.</ns1:description1>
+            <ns1:description2>Low-gravity fun for everyone!</ns1:description2>
+          </ns1:ad>
+          <ns1:status>PAUSED</ns1:status>
+        </ns1:operand>
+      </ns1:operations>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:adGroupId>19202982685</ns1:adGroupId>
+          <ns1:ad xsi:type="ns1:TextAd">
+            <ns1:url>http://www.example.com</ns1:url>
+            <ns1:displayUrl>www.example.com</ns1:displayUrl>
+            <ns1:headline>Cruise #541c19033e7b3</ns1:headline>
+            <ns1:description1>Visit the Red Planet in style.</ns1:description1>
+            <ns1:description2>Low-gravity fun for everyone!</ns1:description2>
+          </ns1:ad>
+          <ns1:status>PAUSED</ns1:status>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 11:52:37 GMT
+Expires: Fri, 19 Sep 2014 11:52:37 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 599
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>00050369bcc850190a431ec965000b48</requestId>
+      <serviceName>AdGroupAdService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>5</operations>
+      <responseTime>419</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>AdGroupAdReturnValue</ListReturnValue.Type>
+        <value>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865205</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e687</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+        </value>
+        <value>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865325</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e6de</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+        </value>
+        <value>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865445</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e724</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+        </value>
+        <value>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865565</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e769</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+        </value>
+        <value>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865685</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e7b3</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:36:22.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 452
+Authorization: Bearer ya29.iADiK-LYlx5cTvaYMWljFmxvSbKVXiJ5RSBDu7w5xhMvIztR88GTq7MU
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:06:22 GMT
+Expires: Mon, 22 Sep 2014 10:06:22 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 400
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a49a4aaf790a4296611a001b94</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>460</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>4</totalNumEntries>
+        <Page.Type>CampaignPage</Page.Type>
+        <entries>
+          <id>202913605</id>
+          <name>Campaign #1</name>
+        </entries>
+        <entries>
+          <id>202932685</id>
+          <name>girish #541bf76d887aa</name>
+        </entries>
+        <entries>
+          <id>202940005</id>
+          <name>girish-kumar</name>
+        </entries>
+        <entries>
+          <id>202931245</id>
+          <name>Interplanetary Cruise #541bf3a4737b5</name>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:37:17.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 452
+Authorization: Bearer ya29.iAB8Ie2pzT8PBBOQP702dwgI5GOkLaMXlSd5vgam9cJrknSVJ0IwbGF5
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:07:16 GMT
+Expires: Mon, 22 Sep 2014 10:07:16 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 399
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a49d8a65710a42fd659e0052c4</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>430</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>4</totalNumEntries>
+        <Page.Type>CampaignPage</Page.Type>
+        <entries>
+          <id>202913605</id>
+          <name>Campaign #1</name>
+        </entries>
+        <entries>
+          <id>202932685</id>
+          <name>girish #541bf76d887aa</name>
+        </entries>
+        <entries>
+          <id>202940005</id>
+          <name>girish-kumar</name>
+        </entries>
+        <entries>
+          <id>202931245</id>
+          <name>Interplanetary Cruise #541bf3a4737b5</name>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:40:42.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 452
+Authorization: Bearer ya29.iAD4wNBrfzrZ7-h8pN4eK2wpd--pBofv34uonAKYFsBsc4zJfrLHIMJ3
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:10:41 GMT
+Expires: Mon, 22 Sep 2014 10:10:41 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 400
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a4a9c5c6400a429a280c0053d4</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>433</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>4</totalNumEntries>
+        <Page.Type>CampaignPage</Page.Type>
+        <entries>
+          <id>202913605</id>
+          <name>Campaign #1</name>
+        </entries>
+        <entries>
+          <id>202932685</id>
+          <name>girish #541bf76d887aa</name>
+        </entries>
+        <entries>
+          <id>202940005</id>
+          <name>girish-kumar</name>
+        </entries>
+        <entries>
+          <id>202931245</id>
+          <name>Interplanetary Cruise #541bf3a4737b5</name>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:42:41.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 500
+Authorization: Bearer ya29.iAAVcjFOvE5o7Mz3RSwcz_mcBN5Z0Ukzi7spCksfa5nS-I7YFm_8bRnv
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:predicates>
+          <ns1:field>CampaignId</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>202940005</ns1:values>
+        </ns1:predicates>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:12:41 GMT
+Expires: Mon, 22 Sep 2014 10:12:41 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 331
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a4b0e137990a4202ca4a001cb4</requestId>
+      <serviceName>AdGroupService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>412</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>1</totalNumEntries>
+        <Page.Type>AdGroupPage</Page.Type>
+        <entries>
+          <id>19202982685</id>
+          <name>giri-test-1</name>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:44:04.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupAdService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 571
+Authorization: Bearer ya29.iAA7n4sSeYgmikYvI-pibZaDyVSHJU0q00DXz3QfWI_4rJi4FDyyhqw2
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Headline</ns1:fields>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:predicates>
+          <ns1:field>AdGroupId</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>19202982685</ns1:values>
+        </ns1:predicates>
+        <ns1:predicates>
+          <ns1:field>AdType</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>TEXT_AD</ns1:values>
+        </ns1:predicates>
+        <ns1:predicates>
+          <ns1:field>Status</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>ENABLED</ns1:values>
+          <ns1:values>PAUSED</ns1:values>
+          <ns1:values>DISABLED</ns1:values>
+        </ns1:predicates>
+        <ns1:ordering>
+          <ns1:field>Headline</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:14:04 GMT
+Expires: Mon, 22 Sep 2014 10:14:04 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 700
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a4b5d8abc80a4231e3c400163e</requestId>
+      <serviceName>AdGroupAdService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>569</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>10</totalNumEntries>
+        <Page.Type>AdGroupAdPage</Page.Type>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825605</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb1003</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825725</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb104c</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825845</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb108c</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825965</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb10c9</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379826085</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb1105</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865205</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e687</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865325</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e6de</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865445</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e724</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865565</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e769</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865685</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e7b3</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:45:02.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupAdService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 571
+Authorization: Bearer ya29.iAAxbadkk2FZHhjhUZj537aEtu4O0DtGlAnDo2sCuIKwssmMj8Y5N4eY
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Headline</ns1:fields>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:predicates>
+          <ns1:field>AdGroupId</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>19202982685</ns1:values>
+        </ns1:predicates>
+        <ns1:predicates>
+          <ns1:field>AdType</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>TEXT_AD</ns1:values>
+        </ns1:predicates>
+        <ns1:predicates>
+          <ns1:field>Status</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>ENABLED</ns1:values>
+          <ns1:values>PAUSED</ns1:values>
+          <ns1:values>DISABLED</ns1:values>
+        </ns1:predicates>
+        <ns1:ordering>
+          <ns1:field>Headline</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:15:02 GMT
+Expires: Mon, 22 Sep 2014 10:15:02 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 700
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a4b94eac310a42afcdad0021f3</requestId>
+      <serviceName>AdGroupAdService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>460</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>10</totalNumEntries>
+        <Page.Type>AdGroupAdPage</Page.Type>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825605</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb1003</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825725</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb104c</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825845</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb108c</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379825965</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb10c9</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379826085</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c163eb1105</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>DISABLED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865205</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e687</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865325</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e6de</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865445</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e724</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865565</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e769</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+        <entries>
+          <adGroupId>19202982685</adGroupId>
+          <ad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextAd">
+            <id>55379865685</id>
+            <url>http://www.example.com</url>
+            <displayUrl>www.example.com</displayUrl>
+            <Ad.Type>TextAd</Ad.Type>
+            <headline>Cruise #541c19033e7b3</headline>
+            <description1>Visit the Red Planet in style.</description1>
+            <description2>Low-gravity fun for everyone!</description2>
+          </ad>
+          <status>PAUSED</status>
+          <approvalStatus>UNCHECKED</approvalStatus>
+          <trademarkDisapproved>false</trademarkDisapproved>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:46:13.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupCriterionService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 544
+Authorization: Bearer ya29.iAASMTLA7XwMyq5PwM0jzv1N1aIUkomt2Xrn5Dmr8EzwumMOlnfgJaLL
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>KeywordText</ns1:fields>
+        <ns1:fields>KeywordMatchType</ns1:fields>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:predicates>
+          <ns1:field>AdGroupId</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>19202982685</ns1:values>
+        </ns1:predicates>
+        <ns1:predicates>
+          <ns1:field>CriteriaType</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>KEYWORD</ns1:values>
+        </ns1:predicates>
+        <ns1:ordering>
+          <ns1:field>KeywordText</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:16:12 GMT
+Expires: Mon, 22 Sep 2014 10:16:12 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 552
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a4bd7e92700a429204d3005357</requestId>
+      <serviceName>AdGroupCriterionService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>474</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>5</totalNumEntries>
+        <Page.Type>AdGroupCriterionPage</Page.Type>
+        <entries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BiddableAdGroupCriterion">
+          <adGroupId>19202982685</adGroupId>
+          <criterionUse>BIDDABLE</criterionUse>
+          <criterion xsi:type="Keyword">
+            <id>99757836805</id>
+            <type>KEYWORD</type>
+            <Criterion.Type>Keyword</Criterion.Type>
+            <text>mars cruise 541fc3bc966d7</text>
+            <matchType>BROAD</matchType>
+          </criterion>
+          <AdGroupCriterion.Type>BiddableAdGroupCriterion</AdGroupCriterion.Type>
+        </entries>
+        <entries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BiddableAdGroupCriterion">
+          <adGroupId>19202982685</adGroupId>
+          <criterionUse>BIDDABLE</criterionUse>
+          <criterion xsi:type="Keyword">
+            <id>99757837045</id>
+            <type>KEYWORD</type>
+            <Criterion.Type>Keyword</Criterion.Type>
+            <text>mars cruise 541fc3bc9673f</text>
+            <matchType>BROAD</matchType>
+          </criterion>
+          <AdGroupCriterion.Type>BiddableAdGroupCriterion</AdGroupCriterion.Type>
+        </entries>
+        <entries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BiddableAdGroupCriterion">
+          <adGroupId>19202982685</adGroupId>
+          <criterionUse>BIDDABLE</criterionUse>
+          <criterion xsi:type="Keyword">
+            <id>99757837285</id>
+            <type>KEYWORD</type>
+            <Criterion.Type>Keyword</Criterion.Type>
+            <text>mars cruise 541fc3bc9678d</text>
+            <matchType>BROAD</matchType>
+          </criterion>
+          <AdGroupCriterion.Type>BiddableAdGroupCriterion</AdGroupCriterion.Type>
+        </entries>
+        <entries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BiddableAdGroupCriterion">
+          <adGroupId>19202982685</adGroupId>
+          <criterionUse>BIDDABLE</criterionUse>
+          <criterion xsi:type="Keyword">
+            <id>99757837525</id>
+            <type>KEYWORD</type>
+            <Criterion.Type>Keyword</Criterion.Type>
+            <text>mars cruise 541fc3bc967e2</text>
+            <matchType>BROAD</matchType>
+          </criterion>
+          <AdGroupCriterion.Type>BiddableAdGroupCriterion</AdGroupCriterion.Type>
+        </entries>
+        <entries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BiddableAdGroupCriterion">
+          <adGroupId>19202982685</adGroupId>
+          <criterionUse>BIDDABLE</criterionUse>
+          <criterion xsi:type="Keyword">
+            <id>99757837765</id>
+            <type>KEYWORD</type>
+            <Criterion.Type>Keyword</Criterion.Type>
+            <text>mars cruise 541fc3bc9682d</text>
+            <matchType>BROAD</matchType>
+          </criterion>
+          <AdGroupCriterion.Type>BiddableAdGroupCriterion</AdGroupCriterion.Type>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:49:14.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupCriterionService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 520
+Authorization: Bearer ya29.iABbc8HpHGYG7zmwkvJMK4T_Ntv0xeqsXjRhthZrcsz9U8wZxmbwshW9
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand xsi:type="ns1:BiddableAdGroupCriterion">
+          <ns1:adGroupId>19202982685</ns1:adGroupId>
+          <ns1:criterion xsi:type="ns1:Keyword">
+            <ns1:text>hi how are u </ns1:text>
+            <ns1:matchType>BROAD</ns1:matchType>
+          </ns1:criterion>
+          <ns1:userStatus>PAUSED</ns1:userStatus>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:19:13 GMT
+Expires: Mon, 22 Sep 2014 10:19:13 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 733
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a4c802b2090a4202ca4a001cb4</requestId>
+      <serviceName>AdGroupCriterionService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>4882</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>AdGroupCriterionReturnValue</ListReturnValue.Type>
+        <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BiddableAdGroupCriterion">
+          <adGroupId>19202982685</adGroupId>
+          <criterion xsi:type="Keyword">
+            <id>3216612991</id>
+            <type>KEYWORD</type>
+            <Criterion.Type>Keyword</Criterion.Type>
+            <text>hi how are u</text>
+            <matchType>BROAD</matchType>
+          </criterion>
+          <AdGroupCriterion.Type>BiddableAdGroupCriterion</AdGroupCriterion.Type>
+          <userStatus>PAUSED</userStatus>
+          <systemServingStatus>ELIGIBLE</systemServingStatus>
+          <approvalStatus>PENDING_REVIEW</approvalStatus>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingStrategySource>CAMPAIGN</biddingStrategySource>
+            <biddingScheme xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+            <bids xsi:type="CpmBid">
+              <Bids.Type>CpmBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000000</microAmount>
+              </bid>
+              <cpmBidSource>ADGROUP</cpmBidSource>
+            </bids>
+            <bids xsi:type="CpcBid">
+              <Bids.Type>CpcBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>500000</microAmount>
+              </bid>
+              <cpcBidSource>ADGROUP</cpcBidSource>
+            </bids>
+          </biddingStrategyConfiguration>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 15:50:31.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupCriterionService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 518
+Authorization: Bearer ya29.iABhSJLLECMaSdir5wFfAzLTqxp2YIq7v3EDB6QRYlfC0URRPhtApBI0
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand xsi:type="ns1:BiddableAdGroupCriterion">
+          <ns1:adGroupId>19202982685</ns1:adGroupId>
+          <ns1:criterion xsi:type="ns1:Keyword">
+            <ns1:text>hoe am i</ns1:text>
+            <ns1:matchType>PHRASE</ns1:matchType>
+          </ns1:criterion>
+          <ns1:userStatus>PAUSED</ns1:userStatus>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 10:20:31 GMT
+Expires: Mon, 22 Sep 2014 10:20:31 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 733
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a4cce0c2380a42b4d047003641</requestId>
+      <serviceName>AdGroupCriterionService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>676</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>AdGroupCriterionReturnValue</ListReturnValue.Type>
+        <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BiddableAdGroupCriterion">
+          <adGroupId>19202982685</adGroupId>
+          <criterion xsi:type="Keyword">
+            <id>99764592325</id>
+            <type>KEYWORD</type>
+            <Criterion.Type>Keyword</Criterion.Type>
+            <text>hoe am i</text>
+            <matchType>PHRASE</matchType>
+          </criterion>
+          <AdGroupCriterion.Type>BiddableAdGroupCriterion</AdGroupCriterion.Type>
+          <userStatus>PAUSED</userStatus>
+          <systemServingStatus>ELIGIBLE</systemServingStatus>
+          <approvalStatus>PENDING_REVIEW</approvalStatus>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingStrategySource>CAMPAIGN</biddingStrategySource>
+            <biddingScheme xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+            <bids xsi:type="CpmBid">
+              <Bids.Type>CpmBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000000</microAmount>
+              </bid>
+              <cpmBidSource>ADGROUP</cpmBidSource>
+            </bids>
+            <bids xsi:type="CpcBid">
+              <Bids.Type>CpcBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>500000</microAmount>
+              </bid>
+              <cpcBidSource>ADGROUP</cpcBidSource>
+            </bids>
+          </biddingStrategyConfiguration>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 22 2014 16:40:42.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 494
+Authorization: Bearer ya29.iADd-tvDhkrve4kCwDUvtiv-3vwu5sxoZ0jSwZhZsXfy7vVHOFd6h6hJ
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>931-981-6934</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>SET</ns1:operator>
+        <ns1:operand>
+          <ns1:id>19202982685</ns1:id>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:bids xsi:type="ns1:CpcBid">
+              <ns1:bid>
+                <ns1:microAmount>750000</ns1:microAmount>
+              </ns1:bid>
+            </ns1:bids>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 22 Sep 2014 11:10:42 GMT
+Expires: Mon, 22 Sep 2014 11:10:42 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 725
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503a580601d180a42c1c7b8004938</requestId>
+      <serviceName>AdGroupService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>400</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <ListReturnValue.Type>AdGroupReturnValue</ListReturnValue.Type>
+        <value>
+          <id>19202982685</id>
+          <campaignId>202940005</campaignId>
+          <campaignName>girish-kumar</campaignName>
+          <name>giri-test-1</name>
+          <status>ENABLED</status>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TargetingSetting">
+            <Setting.Type>TargetingSetting</Setting.Type>
+            <details>
+              <criterionTypeGroup>VERTICAL</criterionTypeGroup>
+              <targetAll>false</targetAll>
+            </details>
+            <details>
+              <criterionTypeGroup>PLACEMENT</criterionTypeGroup>
+              <targetAll>true</targetAll>
+            </details>
+          </settings>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingStrategySource>CAMPAIGN</biddingStrategySource>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpcBid">
+              <Bids.Type>CpcBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>750000</microAmount>
+              </bid>
+              <cpcBidSource>ADGROUP</cpcBidSource>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpaBid">
+              <Bids.Type>CpaBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000</microAmount>
+              </bid>
+            </bids>
+            <bids xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CpmBid">
+              <Bids.Type>CpmBid</Bids.Type>
+              <bid>
+                <ComparableValue.Type>Money</ComparableValue.Type>
+                <microAmount>10000000</microAmount>
+              </bid>
+              <cpmBidSource>ADGROUP</cpmBidSource>
+            </bids>
+          </biddingStrategyConfiguration>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+

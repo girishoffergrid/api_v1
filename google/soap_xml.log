@@ -1,0 +1,337 @@
+[Sep 19 2014 11:50:18.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 451
+Authorization: Bearer ya29.hQCcWnG864AZXrwyPj194RF5gXliN0G9PZ3_cMcM9AX1usCbrvs62zhl
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>422-168-4565</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 06:20:18 GMT
+Expires: Fri, 19 Sep 2014 06:20:18 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 369
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>00050365185286390a429422a8004929</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>186</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>3</totalNumEntries>
+        <Page.Type>CampaignPage</Page.Type>
+        <entries>
+          <id>193781799</id>
+          <name>Calypso All</name>
+        </entries>
+        <entries>
+          <id>190225959</id>
+          <name>Calypso Corporate Events</name>
+        </entries>
+        <entries>
+          <id>192630279</id>
+          <name>Event Services</name>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 11:51:27.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 451
+Authorization: Bearer ya29.hQDgwkCMU7rC4tPwKbQqM15H3DX7H3tZ2dtHfOh-fVIFoD0D6mBGaGoc
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>422-168-4565</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 06:21:27 GMT
+Expires: Fri, 19 Sep 2014 06:21:27 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 369
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503651c6caa280a4255c57f0045e5</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>403</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>3</totalNumEntries>
+        <Page.Type>CampaignPage</Page.Type>
+        <entries>
+          <id>193781799</id>
+          <name>Calypso All</name>
+        </entries>
+        <entries>
+          <id>190225959</id>
+          <name>Calypso Corporate Events</name>
+        </entries>
+        <entries>
+          <id>192630279</id>
+          <name>Event Services</name>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 11:54:34.000000 - INFO] POST /api/adwords/cm/v201406/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 451
+Authorization: Bearer ya29.hQCRjnYmWmDCgdMMsiLisamIwbcRjWIFvy43BU0M95xcGryJOpKpknYr
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>422-168-4565</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 06:24:34 GMT
+Expires: Fri, 19 Sep 2014 06:24:34 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 367
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>00050365279007600a429302ac002520</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>398</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>3</totalNumEntries>
+        <Page.Type>CampaignPage</Page.Type>
+        <entries>
+          <id>193781799</id>
+          <name>Calypso All</name>
+        </entries>
+        <entries>
+          <id>190225959</id>
+          <name>Calypso Corporate Events</name>
+        </entries>
+        <entries>
+          <id>192630279</id>
+          <name>Event Services</name>
+        </entries>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 19 2014 11:56:37.000000 - INFO] POST /api/adwords/cm/v201406/AdGroupAdService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.4, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 568
+Authorization: Bearer ya29.hQD2EP-7fj9gQSDreqipr7n5ksILSv9C7qPEW6flVmNWY6Iwpw7dfXzc
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201406">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>422-168-4565</ns1:clientCustomerId>
+      <ns1:developerToken>olS-2um7BKYbyFuTKSWMFw</ns1:developerToken>
+      <ns1:userAgent>OfferGrid Networks (AwApi-PHP/5.5.1, Common-PHP/5.5.1, PHP/5.5.9-1ubuntu4.4)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Headline</ns1:fields>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:predicates>
+          <ns1:field>AdGroupId</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>193781799</ns1:values>
+        </ns1:predicates>
+        <ns1:predicates>
+          <ns1:field>AdType</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>TEXT_AD</ns1:values>
+        </ns1:predicates>
+        <ns1:predicates>
+          <ns1:field>Status</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>ENABLED</ns1:values>
+          <ns1:values>PAUSED</ns1:values>
+          <ns1:values>DISABLED</ns1:values>
+        </ns1:predicates>
+        <ns1:ordering>
+          <ns1:field>Headline</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Fri, 19 Sep 2014 06:26:37 GMT
+Expires: Fri, 19 Sep 2014 06:26:37 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 302
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <requestId>000503652ee797580a42e382760036d8</requestId>
+      <serviceName>AdGroupAdService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>453</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201406">
+      <rval>
+        <totalNumEntries>0</totalNumEntries>
+        <Page.Type>AdGroupAdPage</Page.Type>
+      </rval>
+    </getResponse>
+  </soap:Body>
+</soap:Envelope>
+

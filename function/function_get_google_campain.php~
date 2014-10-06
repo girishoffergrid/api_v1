@@ -1,0 +1,181 @@
+<?php
+
+require_once dirname(dirname(__FILE__)) . '/init.php';
+
+
+function GetGoogleCampaigns(AdWordsUser $user) {
+  // Get the service, which loads the required classes.
+  $campaignService = $user->GetService('CampaignService', ADWORDS_VERSION);
+
+  // Create selector.
+  $selector = new Selector();
+  $selector->fields = array('Id', 'Name');
+  $selector->ordering[] = new OrderBy('Name', 'ASCENDING');
+
+  // Create paging controls.
+  $selector->paging = new Paging(0, AdWordsConstants::RECOMMENDED_PAGE_SIZE);
+
+  do {
+    // Make the get request.
+    $page = $campaignService->get($selector);
+    
+    $campain_id_name = array();
+    // Display results.
+    if (isset($page->entries)) {
+      foreach ($page->entries as $campaign) {
+        printf("Campaign with name '%s' and ID '%s' was found.\n",
+            $campaign->name, $campaign->id);
+        $get_campain_id_name[]= $campaign->id." ".$campaign->name;
+        
+      }
+    } else {
+      print "No campaigns were found.\n";
+    }
+    
+    
+    return $get_campain_id_name;
+    
+    // Advance the paging index.
+    $selector->paging->startIndex += AdWordsConstants::RECOMMENDED_PAGE_SIZE;
+  } while ($page->totalNumEntries > $selector->paging->startIndex);
+}
+
+
+//-------------------------------------------------------------------------------------
+
+
+
+function GetGoogleAdGroups(AdWordsUser $user, $campaignId) {
+  // Get the service, which loads the required classes.
+  $adGroupService = $user->GetService('AdGroupService', ADWORDS_VERSION);
+
+  // Create selector.
+  $selector = new Selector();
+  $selector->fields = array('Id', 'Name');
+  $selector->ordering[] = new OrderBy('Name', 'ASCENDING');
+
+  // Create predicates.
+  $selector->predicates[] =
+      new Predicate('CampaignId', 'IN', array($campaignId));
+
+  // Create paging controls.
+  $selector->paging = new Paging(0, AdWordsConstants::RECOMMENDED_PAGE_SIZE);
+
+  do {
+    // Make the get request.
+    $page = $adGroupService->get($selector);
+    
+    $get_google_adgroups_id_name =array();
+    
+    // Display results.
+    if (isset($page->entries)) {
+      foreach ($page->entries as $adGroup) {
+        printf("Ad group with name '%s' and ID '%s' was found.\n",
+            $adGroup->name, $adGroup->id);
+        $get_google_adgroups_id_name[] =$adGroup->id." ".$adGroup->name; 
+        
+        
+      }
+    } else {
+      print "No ad groups were found.\n";
+    }
+    return $get_google_adgroups_id_name;
+    // Advance the paging index.
+    $selector->paging->startIndex += AdWordsConstants::RECOMMENDED_PAGE_SIZE;
+  } while ($page->totalNumEntries > $selector->paging->startIndex);
+}
+
+//------------------------------------------------------------------------------
+
+
+function GetGoogleTextAds(AdWordsUser $user, $adGroupId) {
+  // Get the service, which loads the required classes.
+  $adGroupAdService = $user->GetService('AdGroupAdService', ADWORDS_VERSION);
+
+  // Create selector.
+  $selector = new Selector();
+  $selector->fields = array('Headline', 'Id');
+  $selector->ordering[] = new OrderBy('Headline', 'ASCENDING');
+
+  // Create predicates.
+  $selector->predicates[] = new Predicate('AdGroupId', 'IN', array($adGroupId));
+  $selector->predicates[] = new Predicate('AdType', 'IN', array('TEXT_AD'));
+  // By default disabled ads aren't returned by the selector. To return them
+  // include the DISABLED status in a predicate.
+  $selector->predicates[] =
+      new Predicate('Status', 'IN', array('ENABLED', 'PAUSED', 'DISABLED'));
+
+  // Create paging controls.
+  $selector->paging = new Paging(0, AdWordsConstants::RECOMMENDED_PAGE_SIZE);
+
+  do {
+    // Make the get request.
+    $page = $adGroupAdService->get($selector);
+    
+    $get_tex_ads_id_headline = array();
+    // Display results.
+    if (isset($page->entries)) {
+      foreach ($page->entries as $adGroupAd) {
+        printf("Text ad with headline '%s' and ID '%s' was found.\t",
+            $adGroupAd->ad->headline, $adGroupAd->ad->id);
+       
+        $get_tex_ads_id_headline[]= $adGroupAd->ad->id ." ".$adGroupAd->ad->headline;
+        
+        
+      }
+    } else {
+      print "No text ads were found.\n";
+    }
+    
+    return $get_tex_ads_id_headline;
+    // Advance the paging index.
+    $selector->paging->startIndex += AdWordsConstants::RECOMMENDED_PAGE_SIZE;
+  } while ($page->totalNumEntries > $selector->paging->startIndex);
+}
+
+
+
+//------------------------------------------------------------------------------
+
+function GetGoogleKeywords(AdWordsUser $user, $adGroupId) {
+  // Get the service, which loads the required classes.
+  $adGroupCriterionService =
+      $user->GetService('AdGroupCriterionService', ADWORDS_VERSION);
+
+  // Create selector.
+  $selector = new Selector();
+  $selector->fields = array('KeywordText', 'KeywordMatchType', 'Id');
+  $selector->ordering[] = new OrderBy('KeywordText', 'ASCENDING');
+
+  // Create predicates.
+  $selector->predicates[] = new Predicate('AdGroupId', 'IN', array($adGroupId));
+  $selector->predicates[] =
+      new Predicate('CriteriaType', 'IN', array('KEYWORD'));
+
+  // Create paging controls.
+  $selector->paging = new Paging(0, AdWordsConstants::RECOMMENDED_PAGE_SIZE);
+
+  do {
+    // Make the get request.
+    $page = $adGroupCriterionService->get($selector);
+    
+    $get_id_text_matchtype =array();
+    // Display results.
+    if (isset($page->entries)) {
+      foreach ($page->entries as $adGroupCriterion) {
+      printf("Keyword with text '%s', match type '%s', and ID '%s' was "
+          . "found.\n", $adGroupCriterion->criterion->text,
+          $adGroupCriterion->criterion->matchType,
+          $adGroupCriterion->criterion->id);
+      
+          $get_id_text_matchtype[] = $adGroupCriterion->criterion->id." ".$adGroupCriterion->criterion->matchType." ".$adGroupCriterion->criterion->text;
+      
+      }
+    } else {
+      print "No keywords were found.\n";
+    }
+    return $get_id_text_matchtype;
+    // Advance the paging index.
+    $selector->paging->startIndex += AdWordsConstants::RECOMMENDED_PAGE_SIZE;
+  } while ($page->totalNumEntries > $selector->paging->startIndex);
+}
